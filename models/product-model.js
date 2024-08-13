@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const productSchema = mongoose.Schema({
-  image:String,
+  image:Buffer, //buffer is hexadecimal value.
   name:String,
   price:Number,
   discount:{
